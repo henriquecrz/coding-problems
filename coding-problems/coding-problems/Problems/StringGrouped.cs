@@ -8,7 +8,7 @@
 
             foreach (var item in result)
             {
-                Console.WriteLine(string.Join(", ", item));
+                Console.WriteLine(string.Join(Contant.COMMA_SEPARATOR, item));
             }
         }
 
@@ -45,19 +45,18 @@
             return result;
         }
 
-        private static List<KeyValuePair<string, string>> GetInputSorted(List<string> input) =>
-            input
-                .Select(element =>
-                {
-                    var charArray = element.ToCharArray();
-                    var intArray = charArray.ToIntArray();
+        private static List<KeyValuePair<string, string>> GetInputSorted(List<string> input) => input
+            .Select(element =>
+            {
+                var charArray = element.ToCharArray();
+                var intArray = charArray.ToIntArray();
 
-                    Array.Sort(intArray);
+                Array.Sort(intArray);
 
-                    var value = string.Join(string.Empty, intArray);
+                var value = string.Join(string.Empty, intArray);
 
-                    return new KeyValuePair<string, string>(element, value);
-                })
-                .ToList();
+                return new KeyValuePair<string, string>(element, value);
+            })
+            .ToList();
     }
 }
