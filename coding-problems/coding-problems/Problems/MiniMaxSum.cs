@@ -1,17 +1,31 @@
-﻿namespace coding_problems.Problems
+﻿namespace coding_problems.Problems;
+
+public static class MiniMaxSum
 {
-    public static class MiniMaxSum
+    public static void PrintMiniMaxSum(List<int> arr)
     {
-        public static void PrintMiniMaxSum(List<int> arr)
+        var sum = 0L;
+        var min = long.MaxValue;
+        var max = 0L;
+
+        for (var i = 0; i < 5; i++)
         {
-            var min = arr.Min();
-            var max = arr.Max();
-            var sum = arr.Sum();
+            sum += arr[i];
 
-            var sumMin = sum - max;
-            var sumMax = sum - min;
+            if (arr[i] < min)
+            {
+                min = arr[i];
+            }
 
-            Console.WriteLine($"{sumMin} {sumMax}");
+            if (arr[i] > max)
+            {
+                max = arr[i];
+            }
         }
+
+        var sumMin = sum - max;
+        var sumMax = sum - min;
+
+        Console.WriteLine($"{sumMin} {sumMax}");
     }
 }
