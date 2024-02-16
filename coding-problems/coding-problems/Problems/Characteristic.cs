@@ -31,7 +31,7 @@
 
             Console.WriteLine(
                 "The numbers with characteristic are: {0}.",
-                string.Join(Contant.COMMA_SEPARATOR, numbersWithCharacteristic));
+                string.Join(Constant.COMMA_SEPARATOR, numbersWithCharacteristic));
         }
 
         private static string Calculate(string input)

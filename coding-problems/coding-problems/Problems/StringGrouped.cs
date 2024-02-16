@@ -8,7 +8,7 @@
 
             foreach (var item in result)
             {
-                Console.WriteLine(string.Join(Contant.COMMA_SEPARATOR, item));
+                Console.WriteLine(string.Join(Constant.COMMA_SEPARATOR, item));
             }
         }
 
