@@ -41,3 +41,9 @@
 
 //MiniMaxSum.PrintMiniMaxSum(arr);
 #endregion
+
+#region GradingStudents
+//var list = new List<int>() { 73, 67, 38, 33 };
+
+//var a = GradingStudents.gradingStudents(list);
+#endregion
