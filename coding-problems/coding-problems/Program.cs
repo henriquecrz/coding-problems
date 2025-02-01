@@ -33,7 +33,7 @@
 //FizzBuzz.PrintFizzBuzz(n);
 #endregion
 
-#region FizzBuzz
+#region MiniMaxSum
 //var arr = new List<int>() { 1, 2, 3, 4, 5 };
 
 //MiniMaxSum.PrintMiniMaxSum(arr);
